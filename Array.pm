@@ -31,7 +31,7 @@ use Starlink::HDSPACK qw/ retrieve_locs /;
 
 use vars qw/ $VERSION /;
 
-$VERSION = sprintf( "%d", q$Revision $ =~ /(\d+)/);
+$VERSION = sprintf( "%d", q$Revision$ =~ /(\d+)/);
 
 =head1 METHODS
 
