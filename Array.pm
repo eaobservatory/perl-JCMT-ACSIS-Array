@@ -207,6 +207,7 @@ sub _import_file {
   if( $status != &NDF::SAI__OK ) {
     my $errstr = err_flush_to_string( $status );
     err_annul( $status );
+    err_end( $status );
     croak "Error retrieving ACSIS receptor information: $errstr";
   }
 
@@ -214,6 +215,9 @@ sub _import_file {
   my $i = 1;
   my %receptors = map { $_, $i++ } @receptors;
   $self->{RECEPTORS} = \%receptors;
+
+  err_end( $status );
+
 }
 
 =item B<_pixel_mapping>
