@@ -1,0 +1,7 @@
+MANIFEST
+Makefile.PL
+Array.pm
+t/00_compile.t
+t/10_array.t
+t/data/6_rimg.sdf
+t/data/a20080428_00006_01_ts001.sdf
